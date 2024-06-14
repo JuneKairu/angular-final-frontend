@@ -10,8 +10,8 @@ const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'index', component: IndexComponent, canActivate: [AuthGuard] },
-  { path: 'todo', component: TodoComponent, canActivate: [AuthGuard] },
+  { path: 'index', component: IndexComponent},
+  { path: 'todo', component: TodoComponent},
 ];
 
 @NgModule({
